@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.img
+*.zip
+*.ko
+*.fw
+*.o
+*.a
+build/
+out/
+Image
+Image-*

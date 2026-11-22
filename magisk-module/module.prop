@@ -1,0 +1,6 @@
+id=poco_lmi_usb_wifi
+name=POCO F2 Pro USB Wi-Fi (AR9271)
+version=1.0-test
+versionCode=1
+author=Local build
+description=Loads ath9k_htc modules only on the verified test kernel #2
