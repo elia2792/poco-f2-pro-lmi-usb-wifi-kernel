@@ -46,6 +46,24 @@ Questo repository pubblica il porting completo del kernel **Linux 4.19** per **P
 
 ---
 
+## Supported USB Drivers (v2 Module Pack)
+
+All v2 modules are compiled as loadable `=m` modules with the **exact same kernel `Image` ABI/vermagic** as v1 (`4.19.325-cip131-st15-perf-g71b13e62f057`), so no kernel reflash is needed if you already run v1.
+
+| Driver / Module | Chipsets / Example Adapters | Status |
+| :--- | :--- | :--- |
+| `ath9k_htc` (+ `ath`, `ath9k_hw`, `ath9k_common`) | Atheros AR9271 / AR7010 (TP-Link TL-WN722N v1.10, Alfa AWUS036NHA) | **Hardware-verified** on `lmi` (monitor, capture, TX/RX) |
+| `mt76x2u` (+ `mt76`, `mt76-usb`, `mt76x2-common`) | MediaTek MT7612U (Alfa AWUS036ACM, Panda PAU0D — dual-band 2.4/5 GHz) | Compiled + firmware bundled (community testing welcome) |
+| `mt76x0` / `mt7601u` | MediaTek MT7610U (5 GHz) / MT7601U | Compiled + firmware bundled (community testing welcome) |
+| `rt2800usb` (+ `rt2x00lib`, `rt2x00usb`, `rt2800lib`) | Ralink RT3070 / RT3572 / RT5370 / RT5572 (Alfa AWUS036NH / NEH) | Compiled + firmware bundled (community testing welcome) |
+| `rtl8187` (+ `eeprom_93cx6`) | Realtek RTL8187L (Alfa AWUS036H) | Compiled (community testing welcome) |
+| `rtl8xxxu` | Realtek RTL8723AU / 8188CU / 8192CU / 8192EU | Compiled + firmware bundled (community testing welcome) |
+| `carl9170` | Atheros AR9170 | Compiled + firmware bundled (community testing welcome) |
+| `btusb` (+ `btbcm`, `btintel`, `btrtl`) | External USB Bluetooth dongles for Kali BlueZ | Compiled (community testing welcome) |
+| `ch341`, `pl2303` *(+ built-in `ftdi_sio`, `cp210x`, `cdc_acm`)* | USB-UART / ESP32 / LoRa / Flipper Zero serial adapters | Compiled / Built-in |
+
+---
+
 ## Repository Layout
 
 ```text
