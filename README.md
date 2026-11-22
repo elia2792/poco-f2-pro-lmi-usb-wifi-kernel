@@ -1,6 +1,6 @@
-# POCO F2 Pro (`lmi`) — USB Wi-Fi (`ath9k_htc`) + `qcacld-3.0` Overlay Kernel
+# POCO F2 Pro (`lmi`) — Kali NetHunter Kernel (USB Wi-Fi `ath9k_htc` + `qcacld-3.0`)
 
-Open-source kernel overlay, build configuration, Magisk guarded autoloader, and AnyKernel3 packaging for **POCO F2 Pro / Redmi K30 Pro (`lmi`, SM8250)** running **LineageOS 23.2** (Android 16, Linux `4.19.325-cip131-st15-perf-g71b13e62f057`).
+Open-source **Kali NetHunter** kernel overlay, build configuration, Magisk guarded autoloader, and AnyKernel3 packaging for **POCO F2 Pro / Redmi K30 Pro (`lmi`, SM8250)** running **LineageOS 23.2** (Android 16, Linux `4.19.325-cip131-st15-perf-g71b13e62f057`).
 
 > **WARNING — DEVICE CHECK:** This kernel is strictly for **POCO F2 Pro / Redmi K30 Pro (`lmi`)**. **Do NOT flash** on POCO F3 (`alioth`), Mi 10T (`apollo`), or other SM8250 devices. Always back up your stock `boot` partition before flashing.
 
